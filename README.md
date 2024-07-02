@@ -1,5 +1,5 @@
 <p align="center">
-    [<img alt="alt_text" width="40px" src="favicon.ico" /> eDataPOle - Business Connect](https://edatapole.com/)
+    <img alt="alt_text" width="40px" src="favicon.ico" />  eDataPOle - Business Connect  https://edatapole.com/
 </p>
 
 # Sample code to fetchnew registrated business entities information using REST API call.
