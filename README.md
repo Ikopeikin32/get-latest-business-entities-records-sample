@@ -1,5 +1,5 @@
 <p align="center">
-    [<img alt="alt_text" width="40px" src="favicon.ico" />](https://edatapole.com/) eDataPOle - Business Connect
+    [<img alt="alt_text" width="40px" src="favicon.ico" /> eDataPOle - Business Connect](https://edatapole.com/)
 </p>
 
 # Sample code to fetchnew registrated business entities information using REST API call.
@@ -50,7 +50,7 @@ Sample code below shows REST API  request parameters usage and handling the resp
 
 Below is the response sample:
 
-'''python
+```python
 {
   "list": [
     {
@@ -87,5 +87,4 @@ Below is the response sample:
   "response_status": 200,
   "response_reason": "OK"
 }
-'''
-
+```
