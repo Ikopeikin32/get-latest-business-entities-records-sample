@@ -1,11 +1,11 @@
 <p align="center">
-    <img src="https://edatapole.com/static/media/logo.7f2f080730cf78b567f0.png" width="20%" alt="eDataPole logo" />
+    [<img alt="alt_text" width="40px" src="favicon.ico" />](https://edatapole.com/) eDataPOle - Business Connect
 </p>
 
 # Sample code to fetchnew registrated business entities information using REST API call.
 
 To run a sample
-1. Get access token - [sign-up](https://edatapole.com/profile)  www.eDataPole.com. Subscription is free and does not requred credit card information
+1. Get access token - [sign-up](https://edatapole.com/profile) in www.eDataPole.com. Subscription is free and does not requred credit card information
 2. download get-business-sample.py sample code and place your token access. 
 
 ```python
@@ -18,7 +18,7 @@ To run a sample
 3. run
    python get-business-sample.py
  
-Sample code below shows the GET request parameters usage
+Sample code below shows REST API  request parameters usage and handling the response.
 
 ```python
     # replace with your access code.
@@ -47,3 +47,45 @@ Sample code below shows the GET request parameters usage
             print(entity['id'],entity)
 
 ```
+
+Below is the response sample:
+
+'''python
+{
+  "list": [
+    {
+      "corp_name": "HIRE ORBITT LLC",
+      "county": "Westchester",
+      "dos_id": "7338074",
+      "eff_date": "2024-07-27",
+      "entity_type": "DOMESTIC LIMITED LIABILITY COMPANY",
+      "for_juris": "NY",
+      "id": 3922,
+      "sop_addr1": "95 Circle Drive",
+      "sop_addr2": "",
+      "sop_city": "Hastings on Hudson",
+      "sop_name": "Hire Orbitt LLC",
+      "sop_state": "NY",
+      "sop_zip": "10706"
+    },
+    {
+      "corp_name": "LYLA SPA INC.",
+      "county": "New York",
+      "dos_id": "7339633",
+      "eff_date": "2024-08-01",
+      "entity_type": "DOMESTIC BUSINESS CORPORATION",
+      "for_juris": "NY",
+      "id": 7218,
+      "sop_addr1": "31 DIVISION STREET",
+      "sop_addr2": "BASEMENT",
+      "sop_city": "NEW YORK",
+      "sop_name": "RONG WU",
+      "sop_state": "NY",
+      "sop_zip": "10002"
+    }
+  ],
+  "response_status": 200,
+  "response_reason": "OK"
+}
+'''
+
