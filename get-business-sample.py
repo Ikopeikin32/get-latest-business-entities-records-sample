@@ -44,11 +44,17 @@ def fetch_entities(host,port,access_token, state, after_date,new_or_closed=1):
     return entity_list
 
 if __name__ == "__main__":
+    # replace with your access code.
+    #You can find access code on https://www.eDataPole.com/profile paqe.
+    access_token="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJQczFEUnVNUnFsX29WWTRDZGJuYSJ9.eyJpc3MiOiJodHRwczovL2Rldi1jMjJwaGRqbTZzMnI1NGpoLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NjdhYTAxNDViN2IyZWRmN2Y4NzZlNDgiLCJhdWQiOlsiaHR0cHM6L2VEYXRhUG9sZVNlcnZlci5jb20iLCJodHRwczovL2Rldi1jMjJwaGRqbTZzMnI1NGpoLnVzLmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE3MTk5MjQ4NDQsImV4cCI6MTcyMDAxMTI0NCwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsImF6cCI6ImJMRU53R29qR2NTbzhwRjNJNjQ0STFhTjlzWHZ5eG83IiwicGVybWlzc2lvbnMiOltdfQ.M9Yk_SovtnxrWefHwhbBDWri_zOIKnDTl-8UE4E3csl6ByTQzVgFeEYQOW2YwHykxFLUc1hfYoWFHrXvuS9TKCTj7xrMM9OXIkWW1OIt81_HdFYI-m8GZxR510vYpj6p7wbmxeQVnWaG0F-Ghq-_93rdsU0JXX8KgUf2UG3yzKGVdXrybKALGrWNbldO40iyc44ufZMgL0g6xvwIUVQgClGuXhlcr0INDWcsrpQFvnN6pZbiGbDk9YYxdcMed_lBoVQ7U8tBF7r1Z-hRhi1_WdkgT4SQm8ExGgrv0JvTqf3EJcjWsOKG4ISmB0IkvhA4AuQT4NfPE5U-Uxl0WHp98Q"
     host="edatapole.com"
     port = 80
-    access_token="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJQczFEUnVNUnFsX29WWTRDZGJuYSJ9.eyJpc3MiOiJodHRwczovL2Rldi1jMjJwaGRqbTZzMnI1NGpoLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NjdhYTAxNDViN2IyZWRmN2Y4NzZlNDgiLCJhdWQiOlsiaHR0cHM6L2VEYXRhUG9sZVNlcnZlci5jb20iLCJodHRwczovL2Rldi1jMjJwaGRqbTZzMnI1NGpoLnVzLmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE3MTk5MjQ4NDQsImV4cCI6MTcyMDAxMTI0NCwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsImF6cCI6ImJMRU53R29qR2NTbzhwRjNJNjQ0STFhTjlzWHZ5eG83IiwicGVybWlzc2lvbnMiOltdfQ.M9Yk_SovtnxrWefHwhbBDWri_zOIKnDTl-8UE4E3csl6ByTQzVgFeEYQOW2YwHykxFLUc1hfYoWFHrXvuS9TKCTj7xrMM9OXIkWW1OIt81_HdFYI-m8GZxR510vYpj6p7wbmxeQVnWaG0F-Ghq-_93rdsU0JXX8KgUf2UG3yzKGVdXrybKALGrWNbldO40iyc44ufZMgL0g6xvwIUVQgClGuXhlcr0INDWcsrpQFvnN6pZbiGbDk9YYxdcMed_lBoVQ7U8tBF7r1Z-hRhi1_WdkgT4SQm8ExGgrv0JvTqf3EJcjWsOKG4ISmB0IkvhA4AuQT4NfPE5U-Uxl0WHp98Q"
+    # GET request parameters
+    # State. Currently only ny and fl are available
     state="NY"
+    # Fetch entities filed since this date
     after_date="2024-06-20"
+    # Specify new and closed entities. 1 fro new, and 0 for closed
     new_or_closed=1
     response = fetch_entities(host,port, access_token, state, after_date,new_or_closed)
     print(response) 
@@ -62,7 +68,6 @@ if __name__ == "__main__":
         print("-----------------Returned entities-------------")
         for entity in entities:
             print(entity['id'],entity)
-        sys.exit() 
 
 
    
