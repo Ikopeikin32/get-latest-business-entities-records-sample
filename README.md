@@ -47,6 +47,10 @@ Sample code below shows REST API  request parameters usage and handling the resp
             print(entity['id'],entity)
 
 ```
+Same call with curl:
+```curl
+curl curl -v -H "authorization: Bearer eyJhAMobiD9A" "http://edatapole.com/api/messages/bsns?st=NY&after=2024-06-15&new=1"
+```
 
 Below is the response sample:
 
