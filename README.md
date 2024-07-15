@@ -2,7 +2,7 @@
     <img alt="alt_text" width="40px" src="favicon.ico" />  eDataPOle - Business Connect  https://edatapole.com/
 </p>
 
-# Sample code to fetchnew registrated business entities information using REST API call.
+# Sample code to fetch new registrated business entities information using REST API call.
 
 To run a sample
 1. Get access token - [sign-up](https://edatapole.com/profile) in www.eDataPole.com. Subscription is free and does not requred credit card information
@@ -49,7 +49,7 @@ Sample code below shows REST API  request parameters usage and handling the resp
 ```
 Same call with curl:
 ```curl
-curl curl -v -H "authorization: Bearer eyJhAMobiD9A" "http://edatapole.com/api/messages/bsns?st=NY&after=2024-06-15&new=1"
+curl -v "http://edatapole.com/api/messages/bsns?st=NY&after=2024-06-15&new=1@api_key=YOUR_API_KEY"
 ```
 
 Below is the response sample:
