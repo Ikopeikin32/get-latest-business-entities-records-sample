@@ -50,11 +50,12 @@ def fetch_entities(host, port, access_token, state, after_date, new_or_closed=1)
 if __name__ == "__main__":
     # replace with your access code.
     # You can find access code on https://www.eDataPole.com/profile paqe.
-    api_key = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjA5ODYzMDksImV4cCI6MTcyMTA3MjcwOSwic3ViIjoiYXV0aDB8NjY3YWEwMTQ1YjdiMmVkZjdmODc2ZTQ4In0.Sk7tvyObK9zihkYjAzJ8lELG3htZckQB3vbTjPiFIF8"
+    # this is a demo key with expiration on 9/15/24
+    api_key = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjExMzc2MDcsImV4cCI6MTcyNjMyMTYwNywic3ViIjoiREVNTyJ9._ckRMgdDQL0wMjDwNmS4yHmwuoRd8U9uu7T7NDGg-Ow"
     host = "edatapole.com"
     port = 80
-    host = "127.0.0.1"
-    port = 6060
+    # host = "127.0.0.1"
+    # port = 6060
     # GET request parameters
     # State. Currently only NY and FL are available
     state = "NY"

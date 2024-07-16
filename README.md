@@ -9,10 +9,11 @@ To run a sample
 2. download get-business-sample.py sample code and place your token access. 
 
 ```python
-    # replace with your access code.
+    # replace with your API CODE.
     # You can find access code on 
     # https://www.eDataPole.com/profile paqe.
-    access_token="eyJhbG...ciOiJS98Q"
+    # or you can use a temporary demo api key is expiring on 9/15/2024 
+    # api_key="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjExMzc2MDcsImV4cCI6MTcyNjMyMTYwNywic3ViIjoiREVNTyJ9._ckRMgdDQL0wMjDwNmS4yHmwuoRd8U9uu7T7NDGg-Ow"
 ```
 
 3. run
