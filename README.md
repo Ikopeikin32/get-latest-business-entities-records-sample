@@ -50,7 +50,7 @@ Sample code below shows REST API  request parameters usage and handling the resp
 ```
 Same call with curl:
 ```curl
-curl -v "http://edatapole.com/api/messages/bsns?st=NY&after=2024-06-15&new=1@api_key=YOUR_API_KEY"
+curl -v "http://edatapole.com/api/messages/bsns?st=NY&after=2024-06-15&new=1&api_key=YOUR_API_KEY"
 ```
 
 Below is the response sample:
