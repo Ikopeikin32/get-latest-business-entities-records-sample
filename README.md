@@ -5,9 +5,9 @@
 # Sample code to fetch new registrated business entities information using REST API call.
 
 
-Direct link to call API from browser
+**Direct link to call API from browser**
 
-[http://edatapole.com/api/messages/bsns?st=NY&after=2024-06-15&new=1&api_key=YOUR_API_KEY](http://edatapole.com/api/messages/bsns?st=NY&after=2024-06-15&new=1&api_key=YOUR_API_KEY)
+[http://edatapole.com/api/messages/bsns?st=NY&after=2024-06-15&new=1&api_key=YOUR_API_KEY](http://edatapole.com/api/messages/bsns?st=NY&after=2024-06-15&new=1&api_key=YOUR_API_KEY){:target="_blank"}
 
 
 
@@ -19,8 +19,9 @@ curl -v "http://edatapole.com/api/messages/bsns?st=NY&after=2024-06-15&new=1&api
 
 
 
-To run a sample
-1. Get access token - [sign-up](https://edatapole.com/profile) in www.eDataPole.com. Subscription is free and does not requred credit card information
+**To run a sample**
+
+1. Get access token - [sign-up](https://edatapole.com/profile) in www.eDataPole.com. ***Subscription*** is free and does not requred credit card information
 2. download get-business-sample.py sample code and place your token access. 
 
 ```python
