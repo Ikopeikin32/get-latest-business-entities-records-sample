@@ -54,13 +54,13 @@ if __name__ == "__main__":
     api_key = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjExMzc2MDcsImV4cCI6MTcyNjMyMTYwNywic3ViIjoiREVNTyJ9._ckRMgdDQL0wMjDwNmS4yHmwuoRd8U9uu7T7NDGg-Ow"
     host = "edatapole.com"
     port = 80
-    # host = "127.0.0.1"
-    # port = 6060
+    #host = "127.0.0.1"
+    #port = 6060
     # GET request parameters
     # State. Currently only NY and FL are available
     state = "NY"
     # Fetch entities filed since this date
-    after_date = "2024-07-20"
+    after_date = "2024-07-15"
     # Specify new and closed entities. 1 fro new, and 0 for closed
     new_or_closed = 1
     json_response = fetch_entities(

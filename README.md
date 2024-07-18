@@ -7,7 +7,7 @@
 
 Direct link to call API from browser
 
-[http://edatapole.com/api/messages/bsns?st=NY&after=2024-06-15&new=1&api_key=eyJ0eXA....](http://edatapole.com/api/messages/bsns?st=NY&after=2024-06-15&new=1&api_key=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjExMzc2MDcsImV4cCI6MTcyNjMyMTYwNywic3ViIjoiREVNTyJ9._ckRMgdDQL0wMjDwNmS4yHmwuoRd8U9uu7T7NDGg-Ow)
+[http://edatapole.com/api/messages/bsns?st=NY&after=2024-06-15&new=1&api_key=YOUR_API_KEY](http://edatapole.com/api/messages/bsns?st=NY&after=2024-06-15&new=1&api_key=YOUR_API_KEY)
 
 
 
