@@ -4,6 +4,21 @@
 
 # Sample code to fetch new registrated business entities information using REST API call.
 
+
+Direct link to call API from browser
+
+[http://edatapole.com/api/messages/bsns?st=NY&after=2024-06-15&new=1&api_key=eyJ0eXA....](http://edatapole.com/api/messages/bsns?st=NY&after=2024-06-15&new=1&api_key=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjExMzc2MDcsImV4cCI6MTcyNjMyMTYwNywic3ViIjoiREVNTyJ9._ckRMgdDQL0wMjDwNmS4yHmwuoRd8U9uu7T7NDGg-Ow)
+
+
+
+```
+Same call with curl:
+```curl
+curl -v "http://edatapole.com/api/messages/bsns?st=NY&after=2024-06-15&new=1&api_key=YOUR_API_KEY"
+```
+
+
+
 To run a sample
 1. Get access token - [sign-up](https://edatapole.com/profile) in www.eDataPole.com. Subscription is free and does not requred credit card information
 2. download get-business-sample.py sample code and place your token access. 
@@ -47,11 +62,7 @@ Sample code below shows REST API  request parameters usage and handling the resp
         for entity in entities:
             print(entity['id'],entity)
 
-```
-Same call with curl:
-```curl
-curl -v "http://edatapole.com/api/messages/bsns?st=NY&after=2024-06-15&new=1&api_key=YOUR_API_KEY"
-```
+
 
 Below is the response sample:
 
